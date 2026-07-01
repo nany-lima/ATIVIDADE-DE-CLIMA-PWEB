@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="weather-card">
+      <h1>🔍 Previsão do Tempo</h1>
+      <div class="search-container">
+        <input
+          type="text"
+          id="city-input"
+          placeholder="Digite o nome da cidade..."
+        />
+        <button id="search-btn">Buscar</button>
+      </div>
+
+      <div id="weather-result" class="hidden">
+        <h2 id="city-name"></h2>
+        <p id="local-time" class="local-time"></p>
+
+        <div class="weather-main">
+          <img id="weather-icon" src="" alt="Ícone do tempo" />
+          <p id="temperature"></p>
+        </div>
+        <p id="condition"></p>
+
+        <div class="weather-details">
+          <div class="detail-item">
+            <span>Sensação</span>
+            <strong id="feels-like"></strong>
+          </div>
+          <div class="detail-item">
+            <span>Umidade</span>
+            <strong id="humidity"></strong>
+          </div>
+          <div class="detail-item">
+            <span>Vento</span>
+            <strong id="wind-speed"></strong>
+          </div>
+          <div class="detail-item">
+            <span>Pressão</span>
+            <strong id="pressure"></strong>
+          </div>
+          <div class="detail-item">
+            <span>Visibilidade</span>
+            <strong id="visibility"></strong>
+          </div>
+          <div class="detail-item">
+            <span>Índice UV</span>
+            <strong id="uv-index"></strong>
+          </div>
+        </div>
+      </div>
+
+      <div id="error-message" class="hidden">
+        <p>Cidade não encontrada. Tente novamente.</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
